@@ -3,7 +3,7 @@
 #SBATCH --account=jibg31
 #SBATCH --ntasks=256
 #SBATCH --mem=512000
-#SBATCH --time=4:00:00
+#SBATCH --time=10:00
 
 source /p/scratch/cjibg31/jibg3105/projects/venvs/test_crusty/activate.sh
 

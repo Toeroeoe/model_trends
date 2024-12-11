@@ -9,7 +9,7 @@ Your data requirements:
 ### 1. Create your own data dictionary based on the template in `data_config.py`
 | Parameter | data type | Description |
 | --- | --- | --- |
-| name  str | Any name of your choice, not relevant |
+| name | str | Any name of your choice, not relevant |
 | version | tuple[int] | A tuple of the size three, not relevant |
 | path | str | The path to the yearly data files |
 | type_file | str | The data type format. Only netcdf is supported |
@@ -18,7 +18,7 @@ Your data requirements:
 | year_end | int | The last year with available data |
 | month_end | int | The month in the last year until data is available |
 | leapday | bool | True if leapday (29th February is present in the data) |
-| resolution_time | [time offset string](https://pandas.pydata.org/docs/user_guide/timeseries.html#dateoffset-objects) of data time resolution |
+| resolution_time | str | [time offset string](https://pandas.pydata.org/docs/user_guide/timeseries.html#dateoffset-objects) of data time resolution |
 | grid | str | name of the grid the data is based on, not relevant |
 | variables | list[str] | All the variables available in the dataset |
 | variable_names | dict[str, str] | dict relating common variable names to the ones in the dataset |
