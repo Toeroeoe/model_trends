@@ -35,5 +35,6 @@ Your data requirements:
 ### 3. Adjust the loaded environment in `submit.sh`
 Please source your environment file in `submit.sh` in line 8. Importantly, the environment must contain the `crusty` PyPI package and its dependencies. It can be installed by `pip install crusty`.
 
-## To DO
+## To Do
 - Probably it is more convinient to define all the settings in the submit.sh, and parse it as arguments to the pythons script.
+- Functionally allow for different pymannkendall functions by parameter setting.
