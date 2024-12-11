@@ -58,7 +58,9 @@ if __name__ == '__main__':
                data = data_dict,
                variables_out = vars_out,
                units = units_out,
-               file_out = outfile,)
+               file_out = outfile,
+               return_shape = 0,
+               return_dims = [])
 
     end = timer()
 
