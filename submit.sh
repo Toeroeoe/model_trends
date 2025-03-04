@@ -9,19 +9,10 @@
 source /p/scratch/cjibg31/jibg3105/projects/venvs/test_crusty/activate.sh
 
 # Data
-data=clm5_detect_control
-outfile=CLM5_DETECT_production_control_trends.nc
+data=CLM5_detect_SP
+outfile=out/data/CLM5_detect_SP_TWS_trends.nc
 variables=(
-    NEE
-    GPP
-    TLAI
-    TOTECOSYSC
-    TOTSOMC
-    TOTVEGC
-    LEAFC
-    QFLX_EVAP_TOT
-    QFLX_EVAP_VEG
-    ZWT
+    TWS
 )
 
 # https://pypi.org/project/pymannkendall/

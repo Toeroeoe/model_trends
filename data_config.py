@@ -19,6 +19,23 @@ template = {'name': 'HOLIDROUGHT_SXI_183D',
             'variable_units': {'Temp': 'degrees Celcius'},
             'mask_value': None}
 
+
+CLM5_detect_SP = {'name': 'CLM5_detect_SP',
+                  'version': (0, 1, 0),
+                  'path': '/p/scratch/cjibg31/jibg3105/data/DETECT/CLM5_EU3_SP/TWS/',
+                  'type_file': 'netcdf',
+                  'year_start': 2000,
+                  'month_start': 7,
+                  'year_end': 2022,
+                  'month_end': 12,
+                  'leapday': False,
+                  'resolution_time': 'D',
+                  'grid': 'EU3',
+                  'variables': ['TWS'],
+                  'variable_names': {'TWS': 'TWS'},
+                  'variable_dimensions': {'TWS': ['time', 'lat', 'lon']}, 
+                  'variable_units': {'TWS': 'mm'}}
+
 clm5_detect = {'name': 'CLM5_DETECT',
                'version': (0, 1, 0),
                'path': '/p/data1/jibg31/CLM5_EUR-0275/BGC_outputs/carbon_control_DETECT/',
