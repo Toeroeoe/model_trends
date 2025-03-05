@@ -42,7 +42,7 @@ if __name__ == '__main__':
     lat, lon = EU3_grid.load_coordinates()
 
     fig = figures.single_001(fx = 5,
-                             fy = 5,
+                             fy = 4.,
                              projection = 'EU3').create()
 
     ax = plots.amap(ax = fig.axs[0],
@@ -78,8 +78,9 @@ if __name__ == '__main__':
                 fs_label = plot_args['fs_label'])
 
     ax.hatch_legend(fig = fig.fig,
-                    dict_hatch = {'p ≤ 0.05': {'hatch': plot_args['hatch_pattern']*plot_args['hatch_density'],
-                                               'facecolor': 'none'}})
+                    dict_hatch = {'p ≤ 0.05': {'hatch': plot_args['hatch_pattern']*5,
+                                               'facecolor': 'none'}},
+                    anchor = (0.1, 0.9),)
     
     fig.save(Path(f'{outdir}/{outfile}'))
     
