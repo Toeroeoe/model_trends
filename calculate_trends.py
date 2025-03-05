@@ -20,7 +20,12 @@ if __name__ == '__main__':
                         '-v', 
                         help = 'list of variable names',
                         nargs = '*', 
-                        type = list)
+                        type = str)
+
+    parser.add_argument('--slope_units', 
+                        '-u', 
+                        help = 'the resulting units of the trend', 
+                        type = str)
     
     parser.add_argument('--outfile', 
                         '-o', 
@@ -43,7 +48,7 @@ if __name__ == '__main__':
     func_args = ast.literal_eval(args.func_args)
     
     units = {'p': 'dimensionless',
-             'slope': 'm^3 m^-3 8d^-1'}
+             'slope': args.slope_units}
 
     start = timer()
 

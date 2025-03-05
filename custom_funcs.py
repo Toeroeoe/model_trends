@@ -6,14 +6,18 @@ import pymannkendall as pymk
 from datarie.time import index
 
 def anom_trends(arrays: dict[str, np.ndarray],
+                y0: int,
+                y1: int,
                 baseline_y0: int,
                 baseline_y1: int,
                 time_res: str,
-                test: str = 'original_test'):
+                test: str = 'original_test',
+                leapday: bool = False):
         
-        time_index = index(y0 = baseline_y0,
-                           y1 = baseline_y1,
-                           t_res = time_res)
+        time_index = index(y0 = y0,
+                           y1 = y1,
+                           t_res = time_res,
+                           leapday = leapday)
      
         anomalies = baseline_anomalies(arrays = arrays,
                                        baseline_y0 = baseline_y0,
