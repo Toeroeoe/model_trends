@@ -1,3 +1,8 @@
+## Changes (need to update README):
+- new parameters for script including function arguments
+- plot script included.
+
+
 # Calculate model trends on HPC
 This was developed to calculate Mann-Kendall trend statistics on a per-pixel basis over any domain.
 
